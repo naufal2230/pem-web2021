@@ -1,0 +1,85 @@
+<!DOCTYPE Html>
+<html>
+<head>
+	<title> Form Pendaftaran Sekolah Bisnis </title>
+</head>
+
+<body>
+<font size="+2"><b> Form Pendaftaran Sekolah Bisnis</b></font>
+	<form action="login.php" method="POST">
+		<fieldset >
+		<legend> Masukkan Data Anda </legend>
+		<p>
+			<label> Nama Lengkap: </label>
+			<input type="text" name="nama lengkap" />
+		</p>
+		<p>
+			<label> Nama Panggilan: </label>
+			<input type="text" name="nama panggilan" /> 
+		</p>
+		
+		<p>
+			<label> Tempat, Tanggal Lahir</label>
+			<input type="date" name="tempat tanggal lahir" />
+		</p>
+		<p>
+			<label> Jenis Kelami: </label>
+			<input type="radio" name="kelamin" value="Laki-Laki"/><label for="Laki-Laki">Laki-Laki</label>
+            <input type="radio" name="kelamin" value="Perempuan" /><label for="Perempuan">Perempuan</label>
+		</p>
+		<p>
+			<label> Nomor Telepon:  </label>
+			<input type="number" name="nomor telepon"  />
+		</p>
+		<p>
+			<label> Asal Kota </label>
+			<input type="text" name="asal kota" />
+		</p>
+		<p>
+			<label> Alamat:  </label>
+			<input type="text" name="alamat"  />
+		</p>
+		<p>
+			<label> Email::  </label>
+			<input type="email" name="email"  />
+		</p>
+		<p>
+			<label> Nomor KTP:  </label>
+			<input type="number" name="nomor KTP"  />
+		</p>
+		<p>
+			<label for="kelas bisnis"><b>Pilih Kota Sekolah Bisnis: </b></label>
+			<select name="kota">
+                    <option> Jepara </option>
+                    <option> Semarang</option>
+                    <option> Rembang</option>
+					<option> Pemalang </option>
+                    <option> Purwodadi </option>
+					<option> Batang </option>
+                  </select>
+		<p>
+		<p>
+			<label for="kelas bisnis"><b>Pilih Kelas Bisnis: </b></label>
+			<select name="pendidikan">
+                    <option> Cara Membangun Aset </option>
+                    <option> Teknik Marketing Milenial</option>
+                    <option> Closing Cepat</option>
+                    <option> Public Speaking </option>
+                  </select>
+		<p>
+		<p>
+			<label for="file"><b>Upload Foto KTP: </b></label>
+			<input type="file" name="picture" id="picture" accept="image/jpeg, image/gif"/>
+		</p>
+		<p>
+			<label for="file"><b>Upload Foto Profil:</b></label>
+			<input type="file" name="picture" id="picture" accept="image/jpeg, image/gif"/>
+		</p>
+		
+			<input type="submit" name="submit" value="Kirim" />
+		</p>
+		</fieldset>
+	
+	</form>
+</body>
+</html>
